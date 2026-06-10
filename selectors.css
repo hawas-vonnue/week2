@@ -1,0 +1,42 @@
+li:nth-child(2) {
+  color: aqua;
+}
+input[type='email'] {
+  border: 2px solid red;
+}
+.card.featured {
+  color: brown;
+}
+article p:first-of-type {
+  background-color: black;
+}
+h2 + p {
+  color: blueviolet;
+}
+a:hover {
+  background-color: black;
+}
+
+li:nth-child(3n + 1) {
+  color: green;
+}
+p:first-child {
+  color: palevioletred;
+  font-style: italic;
+}
+li:last-child {
+  color: rgb(223, 131, 12);
+}
+button:focus {
+  background-color: black;
+  color: white;
+}
+[href^='https'] {
+  background-color: red;
+}
+ul::before {
+  content: 'start';
+}
+ul::after {
+  content: 'end';
+}
