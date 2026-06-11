@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  border: solid red;
+  padding: 2px;
+  margin: 4px;
+  width: 1000px;
+  height: 100px;
+}
+.container div {
+  border: solid;
+  width: auto;
+  height: auto;
+}
+#container1 {
+  justify-content: flex-start;
+}
+#container2 {
+  justify-content: flex-end;
+}
+#container3 {
+  justify-content: center;
+}
+#container4 {
+  justify-content: space-between;
+}
+#container5 {
+  justify-content: space-around;
+}
+#container6 {
+  justify-content: space-evenly;
+}
+#container7 {
+  align-items: stretch;
+}
+#container8 {
+  align-items: flex-start;
+}
+#container9 {
+  align-items: flex-end;
+}
+#container10 {
+  align-items: center;
+}
+#container11 {
+  align-items: baseline;
+}
+.fontsize1 {
+  font-size: 40px;
+}
+.fontsize2 {
+  font-size: 60px;
+}
+.fontsize3 {
+  font-size: 80px;
+}
+.container.wrap {
+  width: 500px;
+  height: 400px;
+  flex-wrap: wrap;
+}
+#container12 {
+  align-content: flex-start;
+}
+#container13 {
+  align-content: flex-end;
+}
+#container14 {
+  align-content: center;
+}
+#container15 {
+  align-content: space-between;
+}
+#container16 {
+  align-content: space-around;
+}
+#container17 {
+  align-content: stretch;
+}
+.container.direction {
+  width: 300px;
+  height: auto;
+}
+#container18 {
+  flex-direction: row;
+}
+#container19 {
+  flex-direction: row-reverse;
+}
+#container20 {
+  flex-direction: column;
+}
+#container21 {
+  flex-direction: column-reverse;
+}
