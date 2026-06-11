@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@media print {
+  #navbar {
+    display: none;
+  }
+}
+:root {
+  --color-primary: rgb(0, 0, 0);
+  --color-primary-rgb: rgb(0, 0, 0);
+  --color-primary-hex: #000000;
+  --color-primary-hsl: hsl(0, 0%, 0%);
+  --color-primary-oklch: oklch(0% 0 0);
+  --color-secondary: rgb(46, 46, 121);
+  --color-accent: green;
+  --color-success: green;
+  --color-warning: red;
+  --color-error: red;
+  --color-text: rgb(224, 221, 221);
+  --color-bg: rgb(100, 100, 100);
+  --color-gray-500: oklch(55.1% 0.027 264.364);
+  --color-gray-600: oklch(37.3% 0.034 259.733);
+  --color-gray-700: oklch(37.3% 0.034 259.733);
+  --color-gray-800: oklch(27.8% 0.033 256.848);
+  --color-gray-900: oklch(21% 0.034 264.665);
+}
+:root[data-theme='dark'] {
+  --color-text: white;
+  --color-bg: black;
+  --color-primary: white;
+}
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  background-image: url('https://picsum.photos/id/44/200?grayscale&blur=1');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.column {
+  padding: 1rem;
+  width: 100%;
+}
+.column h2 {
+  text-align: center;
+}
+.quote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+.quote p {
+  text-align: end;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+p {
+  font-weight: 400;
+}
+h1 {
+  color: var(--color-primary);
+  font-family: 'Noto Serif', serif;
+}
+h2,
+h3 {
+  color: var(--color-secondary);
+  font-family: 'Noto Serif', serif;
+}
