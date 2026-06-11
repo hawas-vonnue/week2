@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  border: solid red;
+  margin: 10px;
+}
+.container div {
+  border: solid;
+}
+#one {
+  flex-grow: 0;
+}
+#two {
+  flex-grow: 1;
+}
+#three {
+  flex-grow: 2;
+}
+#four {
+  flex-grow: 1;
+}
+#five {
+  flex-grow: 0;
+}
+.shrink {
+  width: 200px;
+}
+.shrink div {
+  width: 100px;
+}
+#six {
+  flex-shrink: 0;
+}
+#seven {
+  flex-shrink: 2;
+}
+#eight {
+  flex-shrink: 1;
+}
+/* flex-basis will only apply to flex items unlike width and flex-basis set the initial value so based on flex-grow 
+the value can change and also
+flex-basis can be width or height based on flex- direction. */
+.container.flex-basis {
+  width: 200px;
+}
+.flex-basis div {
+  margin: 3px;
+}
+#basis1 {
+  flex-basis: 0;
+}
+#basis2 {
+  flex-basis: auto;
+}
+#basis3 {
+  flex-basis: 200px;
+}
+#basis4 {
+  flex-basis: 33.333%;
+}
+.order {
+  width: 300px;
+}
+.order div {
+  margin: 2px;
+}
+#id1 {
+  order: 2;
+}
+#id2 {
+  order: 4;
+}
+#id3 {
+  order: 3;
+}
+#id4 {
+  order: 5;
+}
+#id5 {
+  order: 1;
+}
+.align-self {
+  height: 300px;
+  width: 300px;
+  align-items: center;
+}
+.align-self div {
+  margin: 3px;
+}
+#id6 {
+  align-self: flex-end;
+}
