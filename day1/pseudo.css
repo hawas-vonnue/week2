@@ -1,0 +1,39 @@
+.navbar:hover {
+  background-color: black;
+}
+.navbar a:focus {
+  outline: 2px dashed blue;
+}
+/* focus works when a mouse or keyboard focus on it but focus-visible works only when keyboard focus that is with tab key.*/
+
+input[type='checkbox'] {
+  appearance: none;
+}
+input:checked + #label1::before {
+  content: '*';
+  background-color: blue;
+}
+#label1::before {
+  content: '';
+  border: solid;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+ol {
+  counter-reset: counter;
+}
+ol li {
+  counter-increment: counter;
+}
+ol li::before {
+  content: 'Item ' counter(counter) ':';
+}
+ol li::marker {
+  content: '- ';
+}
+.tooltip:hover::after {
+  position: absolute;
+  content: attr(tooltip);
+}
