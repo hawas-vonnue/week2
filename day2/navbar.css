@@ -1,0 +1,51 @@
+header {
+  container-type: scroll-state;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* to give container we need a child we cant choose the same element with container type */
+  > .navbar {
+    @container scroll-state(stuck: top) {
+      box-shadow: 10px 10px 10px black;
+    }
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(226, 226, 240);
+}
+.navbar nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.navbar nav a {
+  margin: 4px;
+}
+.navbar:hover {
+  background-color: aqua;
+}
+nav a:focus-visible,
+.navbar button:focus-visible {
+  border: dashed blue;
+}
+#menu {
+  display: none;
+}
+/* task only need to hide nav links not entire navbar */
+@media screen and (width<=768px) {
+  .navbar nav {
+    display: none;
+  }
+  #menu {
+    display: inline;
+    margin: 4px;
+  }
+}
+/* @container scroll-state(stuck: none) {
+  .navbar {
+    background-color: black;
+    box-shadow: 10px 10px 10px black;
+  }
+} */
