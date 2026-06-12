@@ -1,0 +1,50 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* align-items: center; */
+}
+header {
+  background-color: aqua;
+  width: 100vw;
+  text-align: center;
+}
+main {
+  background-color: antiquewhite;
+  display: flex;
+  flex-grow: 1;
+}
+main .mainContent {
+  /* color: red; */
+  flex-grow: 1;
+  padding: 2px;
+  margin: 5px;
+  border: dotted red;
+}
+footer {
+  background-color: aqua;
+  width: 100vw;
+  text-align: center;
+}
+.sidebar {
+  width: 150px;
+  padding: 2px;
+  margin: 5px;
+  border: dotted red;
+  flex-shrink: 0;
+}
+.aside {
+  width: 150px;
+  padding: 2px;
+  margin: 5px;
+  border: dotted red;
+  flex-shrink: 0;
+}
+@media screen and (width<=600px) {
+  main {
+    flex-direction: column;
+  }
+  main .mainContent {
+    order: -1;
+  }
+}
