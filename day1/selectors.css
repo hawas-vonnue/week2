@@ -16,7 +16,6 @@ h2 + p {
 a:hover {
   background-color: black;
 }
-
 li:nth-child(3n + 1) {
   color: green;
 }
