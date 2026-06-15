@@ -53,10 +53,6 @@ input:user-invalid + span {
 span {
   visibility: hidden;
 }
-/* input:user-invalid + span::after {
-  content: 'error';
-  color: red;
-} */
 @media screen and (width<=700px) {
   .form .field {
     flex-direction: column;
