@@ -44,7 +44,7 @@ ul li {
   border-radius: 50%;
   position: absolute;
 }
-/* @media screen and (width<=480px) {
+@media screen and (width<=480px) {
   .calendar {
     grid-template-columns: 1fr;
   }
@@ -54,4 +54,7 @@ ul li {
   .week {
     display: none;
   }
-} */
+  #firstDay {
+    grid-column: auto;
+  }
+}
