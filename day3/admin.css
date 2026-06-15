@@ -1,0 +1,124 @@
+:root {
+  --color-primary: rgb(207, 202, 202);
+  --color-secondary: rgb(214, 204, 189);
+  --color-text: #0f172a;
+  --color-text-secondary: #3c5b6f;
+  --color-bg: white;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  display: grid;
+  gap: 5px;
+  border: solid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-areas:
+    'header header header'
+    'sidebar stats stats'
+    'sidebar chart chart'
+    'sidebar panel1 panel2';
+}
+header {
+  background-color: var(--color-primary);
+  text-align: center;
+  grid-area: header;
+}
+.sidebar {
+  width: 240px;
+  grid-area: sidebar;
+  margin-left: 0.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 5px;
+}
+.stats .cards {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7%;
+}
+.stats .cards p {
+  padding: 0.2em;
+}
+.chart {
+  grid-area: chart;
+}
+.panel1 {
+  grid-area: panel1;
+}
+.panel2 {
+  grid-area: panel2;
+}
+@media screen and (width<=1024px) {
+  .sidebar {
+    width: 60px;
+  }
+}
+@media screen and (width<=768px) {
+  .container {
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'stats'
+      'chart'
+      'panel1'
+      'panel2';
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    width: auto;
+  }
+}
+#percentage {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+#text {
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+.chart p {
+  color: var(--color-text-secondary);
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+}
+img {
+  width: 300px;
+  margin-top: 0.2em;
+}
+.panel1 h3 {
+  color: var(--color-text);
+  margin: 0;
+  font-size: 1.05rem 16.8px;
+}
+.panel1 p {
+  color: var(--color-text-secondary);
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+}
+.panel2 h3 {
+  color: var(--color-text);
+  margin: 0;
+  font-size: 1.05rem 16.8px;
+}
+.panel2 p {
+  color: var(--color-text-secondary);
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+}
+.sidebar h3 {
+  color: var(--color-text);
+  margin: 0;
+  font-size: 0.95rem;
+}
