@@ -1,0 +1,67 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    'h h h h'
+    'nav nav nav nav'
+    'hero hero hero hero'
+    'sidebar a1 a2 ad'
+    'footer footer footer footer';
+  gap: 5px;
+}
+header {
+  grid-area: h;
+  border: solid;
+}
+nav {
+  grid-area: nav;
+  background-color: aqua;
+}
+.hero {
+  grid-area: hero;
+  border: dotted;
+}
+.sidebar {
+  grid-area: sidebar;
+  border: dotted;
+}
+.article1 {
+  grid-area: a1;
+  border: dotted;
+}
+.article2 {
+  grid-area: a2;
+  border: dotted;
+}
+.ad {
+  grid-area: ad;
+  border: dotted;
+}
+footer {
+  grid-area: footer;
+  background-color: aqua;
+}
+@media screen and (width<=900px) {
+  .main {
+    grid-template-areas:
+      'h h'
+      'nav nav'
+      'hero hero'
+      'sidebar sidebar'
+      'a1 a2'
+      'ad ad'
+      'footer footer';
+  }
+}
+@media screen and (width<=600px) {
+  .main {
+    grid-template-areas:
+      'h'
+      'nav'
+      'hero'
+      'a1'
+      'a2'
+      'sidebar'
+      'ad'
+      'footer';
+  }
+}
