@@ -8,14 +8,12 @@
   align-items: center;
   margin: 2px;
 }
-
 .footer {
   margin-top: auto;
 }
 #image2 {
   width: 160px;
 }
-
 .hcard {
   display: flex;
   border: solid;
@@ -39,14 +37,12 @@
   /* put 30 percentage instead of 33.333 to accord for padding and margin etc */
   flex: 1 1 calc(30%);
 }
-
 @media screen and (width<=600px) {
   .hcard {
     flex-direction: column;
     align-items: center;
   }
 }
-
 @media screen and (width<=700px) {
   .sixCardGrid .card2 {
     /* put 45 percentage instead of 50% to accord for padding and margin etc */
