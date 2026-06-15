@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  gap: 5px;
+  border: solid;
+}
+#productGrid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+}
+.container div {
+  border: dotted;
+}
+#autoFill {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+#autoFit {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+#span1 {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+#item5 {
+  /* grid-column-start: auto; */
+  grid-column-end: -1;
+}
+#span2 {
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+}
+#featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
