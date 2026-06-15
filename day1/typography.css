@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-display: swap;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+h1,
+h2 {
+  font-size: 5rem;
+  font-family: 'Noto Serif', serif;
+  font-display: swap;
+}
+#p1 {
+  font-size: 1.2rem;
+}
+#p2 {
+  font-size: 1.4rem;
+}
+#p3 {
+  font-size: 1.6rem;
+}
+#p4 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+#p5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+#p6 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+#p7 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+#p8 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+/* font weight 1000 (only 100 to 900 weight is supported) is not supported for this font style so this is font synthesis */
+#p9 {
+  font-size: 4.8rem;
+  font-synthesis: weight;
+  font-weight: 1000;
+}
+#p10 {
+  font-size: 6rem;
+}
+#p11 {
+  font-size: 3rem;
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#p12 {
+  font-size: 3rem;
+}
