@@ -59,9 +59,20 @@ header {
 .panel2 {
   grid-area: panel2;
 }
+.sidebar button {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
 @media screen and (width<=1024px) {
   .sidebar {
     width: 60px;
+  }
+  .sidebarContent {
+    display: none;
+  }
+  .sidebar button {
+    display: block;
   }
 }
 @media screen and (width<=768px) {
