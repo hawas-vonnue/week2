@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  border: solid;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  padding: 4px;
+  align-items: center;
+  margin: 2px;
+}
+.footer {
+  margin-top: auto;
+}
+#image2 {
+  width: 160px;
+}
+.hcard {
+  display: flex;
+  border: solid;
+  justify-content: space-around;
+  width: 400px;
+}
+.hcard div {
+  padding: 4px;
+}
+.sixCardGrid {
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap;
+}
+.sixCardGrid .card2 {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  padding: 4px;
+  margin: 2px;
+  /* put 30 percentage instead of 33.333 to accord for padding and margin etc */
+  flex: 1 1 calc(30%);
+}
+@media screen and (width<=600px) {
+  .hcard {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (width<=700px) {
+  .sixCardGrid .card2 {
+    /* put 45 percentage instead of 50% to accord for padding and margin etc */
+    flex: 1 1 calc(45%);
+  }
+}
+@media screen and (width<=480px) {
+  .sixCardGrid .card2 {
+    /* put 98 percentage instead of 100% to accord for padding and margin etc */
+    flex: 1 1 calc(98%);
+  }
+}
