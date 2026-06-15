@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  border: solid;
+  gap: 5px;
+}
+.container div {
+  border: dotted;
+}
+#container1 {
+  grid-template-columns: 200px 200px;
+}
+#container2 {
+  grid-template-columns: 50% 45%;
+}
+#container3 {
+  grid-template-columns: 1fr 1fr;
+}
+#container4 {
+  grid-template-columns: auto;
+}
+#container5 {
+  grid-template-columns: minmax(200px, 1fr);
+}
+#container6 {
+  grid-template-columns: repeat(3, 1fr);
+}
+#container7 {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+#container8 {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+#container9 {
+  grid-template-columns: repeat(3, 1fr);
+  /* the rows are implicit grid here */
+  grid-auto-rows: minmax(100px, auto);
+}
+#container10 {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 7px;
+}
