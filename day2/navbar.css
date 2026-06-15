@@ -33,7 +33,7 @@ nav a:focus-visible,
 #menu {
   display: none;
 }
-/* task only need to hide nav links not entire navbar */
+/* task only specifies to hide nav links not entire navbar */
 @media screen and (width<=768px) {
   .navbar nav {
     display: none;
@@ -43,9 +43,3 @@ nav a:focus-visible,
     margin: 4px;
   }
 }
-/* @container scroll-state(stuck: none) {
-  .navbar {
-    background-color: black;
-    box-shadow: 10px 10px 10px black;
-  }
-} */
