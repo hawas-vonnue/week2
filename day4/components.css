@@ -55,7 +55,7 @@
 .rating label::before {
   content: '\2606';
 }
-input[type='radio']:checked ~ label::before {
+.rating input[type='radio']:checked ~ label::before {
   content: '\2605';
   color: yellow;
 }
