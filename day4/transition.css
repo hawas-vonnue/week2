@@ -1,0 +1,66 @@
+.transition div {
+  border: solid;
+  padding: 2em;
+  margin: 2em;
+  width: 50px;
+}
+.transition div:hover {
+  transition-property: all;
+  transition-duration: 3s;
+  width: 200px;
+  background-color: aqua;
+}
+.ease {
+  transition-timing-function: ease;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+.linear {
+  transition-timing-function: linear;
+}
+button:hover {
+  background-color: aqua;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.card {
+  border: solid;
+  padding: 2em;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+}
+.card .description,
+.card button,
+.card .title {
+  opacity: 0;
+}
+.card:hover .title {
+  opacity: 100;
+}
+.card:hover .description {
+  transition-delay: 50ms;
+  opacity: 100;
+}
+.card:hover button {
+  transition-delay: 100ms;
+  opacity: 100;
+}
+:focus {
+  outline: dashed blue;
+  background-color: rgb(206, 206, 255);
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
