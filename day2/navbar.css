@@ -22,9 +22,6 @@ header {
   align-items: center;
   gap: 10px;
 }
-/* .navbar nav a {
-  margin: 4px;
-} */
 .navbar:hover {
   background-color: aqua;
 }
