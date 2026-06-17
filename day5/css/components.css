@@ -1,0 +1,30 @@
+.hero .content h1 {
+  text-align: center;
+}
+
+.row .column {
+  padding: 1em;
+  margin: 1em;
+}
+
+.row .column h3 {
+  text-align: center;
+}
+
+.testimonial {
+  border: solid;
+  padding: 1em;
+  margin: 0.3em;
+
+  /* margin-right: auto; */
+}
+
+.testimonial > p {
+  text-align: end;
+}
+
+.features .feature {
+  border: solid;
+  padding: 1em;
+  gap: 4em;
+}
