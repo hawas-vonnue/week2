@@ -1,0 +1,37 @@
+@media print {
+  nav {
+    display: none !important;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  button {
+    display: none !important;
+  }
+  .ads {
+    display: none !important;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  video {
+    display: none !important;
+  }
+  .collapsed,
+  .tabPanels {
+    display: block !important;
+  }
+  a[href^='http']::after {
+    content: '(' attr(href) ')';
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* used break after instead of page-break because that is deprecated */
+    break-after: avoid;
+  }
+}
