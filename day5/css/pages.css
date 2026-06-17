@@ -38,3 +38,19 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  main {
+    animation: fade 1.5s;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
