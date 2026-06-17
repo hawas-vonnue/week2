@@ -1,0 +1,24 @@
+@media screen and (width<=768px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+@media screen and (width<=480px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+  }
+}

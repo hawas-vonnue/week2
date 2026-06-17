@@ -1,0 +1,44 @@
+header {
+  text-align: center;
+  background-color: var(--color-secondary);
+  position: sticky;
+  top: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  border-bottom: solid;
+}
+
+.row {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 2em;
+  margin: 2em;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--color-secondary);
+  height: 5vh;
+}
+
+footer .content {
+  padding: 1em;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}

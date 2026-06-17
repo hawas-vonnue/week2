@@ -1,12 +1,4 @@
-@import url("./base.css");
-@import url("./layout.css");
-@import url("./components.css");
-@import url("./pages.css");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url('./base.css');
+@import url('./layout.css');
+@import url('./components.css');
+@import url('./pages.css');
