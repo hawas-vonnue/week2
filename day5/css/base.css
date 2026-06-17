@@ -1,0 +1,56 @@
+:root {
+  --color-primary: gray;
+  --color-primary-rgb: rgb(128 128 128);
+  --color-primary-hex: #808080;
+  --color-primary-hsl: hsl(0deg 0% 50%);
+  --color-primary-oklch: oklch(59.99% 0 0deg);
+  --color-secondary: blue;
+  --color-accent: green;
+  --color-success: green;
+  --color-warning: red;
+  --color-error: red;
+  --color-text: black;
+  --color-bg: white;
+  --color-gray-500: oklch(55.1% 0.027 264.364deg);
+  --color-gray-600: oklch(37.3% 0.034 259.733deg);
+  --color-gray-700: oklch(37.3% 0.034 259.733deg);
+  --color-gray-800: oklch(27.8% 0.033 256.848deg);
+  --color-gray-900: oklch(21% 0.034 264.665deg);
+}
+
+:root[data-theme='dark'] {
+  --color-text: white;
+  --color-bg: black;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw + 1rem, 5.6rem);
+}
+
+h2 {
+  font-size: clamp(1.9rem, 4.5vw + 1rem, 5.1rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 4vw + 1rem, 4.6rem);
+}
+
+h4 {
+  font-size: clamp(0.9rem, 3.5vw + 1rem, 4.1rem);
+}
+
+h5 {
+  font-size: clamp(0.5rem, 3.1vw + 1rem, 3.7rem);
+}
+
+h6 {
+  font-size: clamp(0.2rem, 2.7vw + 1rem, 3.2rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
