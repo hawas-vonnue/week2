@@ -282,8 +282,8 @@ img {
   opacity: 0;
 }
 
-.field input:focus-within + label,
-.field textarea:focus + label,
+.field input:focus-visible + label,
+.field textarea:focus-visible + label,
 .field input:not(:placeholder-shown) + label {
   opacity: 1;
   transform: translateY(-19px) scale(1.2);
@@ -347,4 +347,22 @@ select {
 
 :user-valid {
   border: solid var(--color-success);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+a:focus-visible {
+  outline: solid var(--color-bg-secondary);
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+button:hover {
+  outline: dotted var(--color-text);
+}
+
+a:hover {
+  text-decoration: underline blue;
 }
