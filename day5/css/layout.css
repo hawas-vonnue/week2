@@ -3,6 +3,7 @@ header {
   background-color: var(--color-secondary);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 header nav {
@@ -41,4 +42,11 @@ footer .content {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
   margin-bottom: 1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin: 2em;
 }

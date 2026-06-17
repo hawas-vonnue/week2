@@ -7,6 +7,10 @@
   margin: 1em;
 }
 
+.container article h3 {
+  padding: 0.5em;
+}
+
 .row .column h3 {
   text-align: center;
 }
@@ -124,4 +128,64 @@ article > h2 {
 
 .about > h2 {
   margin-top: 1em;
+}
+
+.container article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  border: solid;
+  transition: position 300ms ease;
+}
+
+.container article:hover {
+  transform: translateY(-10px);
+  border: solid var(--color-accent);
+}
+
+td,
+th {
+  border: solid;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-zebra);
+}
+
+/* table .featured {
+  background-color: var(--color-highlight);
+} */
+
+table th {
+  position: sticky;
+  top: 60px;
+}
+
+table td:nth-child(4),
+table th:nth-child(4) {
+  background-color: var(--color-highlight);
+}
+
+.table {
+  margin: 2em;
+  overflow-x: auto;
+}
+
+table .color {
+  z-index: 2;
+  background-color: var(--color-bg-secondary);
+}
+
+.call-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--color-accent);
+  padding: 1em;
+}
+
+.call-action .text-area {
+  text-align: center;
 }
