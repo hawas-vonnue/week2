@@ -15,6 +15,10 @@
   .container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .team .container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (width<=480px) {
@@ -27,6 +31,10 @@
   }
 
   .container {
+    grid-template-columns: 1fr;
+  }
+
+  .team .container {
     grid-template-columns: 1fr;
   }
 }
