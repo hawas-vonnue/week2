@@ -35,6 +35,7 @@ footer {
 
 footer .content {
   padding: 1em;
+  color: var(--color-link);
 }
 
 .values {
