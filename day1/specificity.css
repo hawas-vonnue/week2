@@ -1,0 +1,62 @@
+/* specificity:(0,0,0,0) */
+* {
+  color: aliceblue;
+}
+/* specificity:(0,0,0,1) */
+p {
+  color: aqua;
+}
+/* specificity:(0,0,0,2) */
+div p {
+  color: aquamarine;
+}
+/* specificity:(0,0,1,0) */
+.para {
+  color: azure;
+}
+/* specificity:(0,0,1,1) */
+.card p {
+  color: antiquewhite;
+}
+/* specificity:(0,0,1,1) */
+div .para {
+  color: beige;
+}
+/* specificity:(0,0,1,1) */
+p.para {
+  color: bisque;
+}
+/* specificity:(0,0,1,1) */
+p:first-child {
+  color: blanchedalmond;
+}
+/* specificity:(0,0,1,2) */
+div p:first-child {
+  color: blue;
+}
+/* specificity:(0,0,2,0) */
+.card .para {
+  color: black;
+}
+/* specificity:(0,0,2,1) */
+.card p:first-child {
+  color: blueviolet;
+}
+/* specificity:(0,0,2,1) */
+.card p:first-of-type {
+  color: brown;
+}
+/* specificity:(0,1,0,0) */
+#para1 {
+  color: burlywood;
+}
+/* specificity:(0,1,1,0) */
+.para#para1 {
+  color: chartreuse;
+}
+/* specificity:(1,0,0,0,0) */
+#para1 {
+  color: chocolate !important;
+}
+
+/* the color chocolate will win because its specificity is highest due to !important being there. */
