@@ -1,0 +1,60 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.form .field {
+  display: flex;
+  gap: 5px;
+}
+.form .field label {
+  min-width: 180px;
+}
+.form .field input,
+.form .field textarea {
+  flex-grow: 1;
+}
+.form .field .pairedFields {
+  display: flex;
+  gap: 5px;
+  flex-grow: 1;
+}
+.pairedFields .field {
+  flex-grow: 1;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+:focus {
+  border: dashed blue;
+}
+[type='submit']:hover {
+  border: solid blue;
+}
+input:user-invalid {
+  border: solid red;
+}
+input:user-invalid + span {
+  visibility: visible;
+  color: red;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+span {
+  visibility: hidden;
+}
+@media screen and (width<=700px) {
+  .form .field {
+    flex-direction: column;
+  }
+}

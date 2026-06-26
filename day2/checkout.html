@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Payment checkout Form</title>
+    <link rel="stylesheet" href="./checkout.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Payment checkout Form</h1>
+      <form>
+        <fieldset class="parent">
+          <legend>Fields marked * are required</legend>
+          <fieldset>
+            <legend>Delivery Address</legend>
+            <div class="form">
+              <div class="field">
+                <div class="pairedFields">
+                  <div class="field">
+                    <label for="firstName">First name:*</label>
+                    <div class="inputField">
+                      <input id="firstName" type="text" required />
+                      <span>This is a required field</span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="lastName">Last name:*</label>
+                    <div class="inputField">
+                      <input type="text" id="lastName" required />
+                      <span>This is a required field</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="addr1">Address line 1*:</label>
+                <div class="inputField">
+                  <input id="addr1" type="text" required />
+                  <span>This is a required field</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="addr2">Address line 2:</label>
+                <div class="inputField">
+                  <input id="addr2" type="text" />
+                  <span>This is a required field</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="city">city:*</label>
+                <div class="inputField">
+                  <input type="text" id="city" required />
+                  <span>This is a required field</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="postCode">postcode:*</label>
+                <div class="inputField">
+                  <input id="postCode" type="number" required />
+                  <span>This is a required field</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="country">country:*</label>
+                <div class="inputField">
+                  <input type="text" id="country" list="countries" required />
+                  <span>This is a required field</span>
+                  <datalist id="countries">
+                    <option value="India"></option>
+                    <option value="US"></option>
+                    <option value="Afghanistan"></option>
+                    <option value="Pakistan"></option>
+                    <option value="Bangladesh"></option>
+                    <option value="UK"></option>
+                    <option value="Canada"></option>
+                    <option value="Argentina"></option>
+                    <option value="Spain"></option>
+                    <option value="Portugal"></option>
+                    <option value="Turkey"></option>
+                    <option value="UAE"></option>
+                    <option value="Iraq"></option>
+                    <option value="Iran"></option>
+                    <option value="Israel"></option>
+                    <option value="Palestine"></option>
+                    <option value="Russia"></option>
+                    <option value="Ukraine"></option>
+                    <option value="China"></option>
+                    <option value="Dubai"></option>
+                  </datalist>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <!-- payment details -->
+          <fieldset>
+            <legend>Payment Details</legend>
+            <div class="form">
+              <div class="field">
+                <label for="cardNumber">card number:*</label>
+                <div class="inputField">
+                  <input type="text" maxlength="16" id="cardNumber" pattern="[0-9]*" required />
+                  <span>This is a required field</span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="pairedFields">
+                  <div class="field">
+                    <label for="month">Enter expiry month:*</label>
+                    <div class="inputField">
+                      <select name="month" id="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                      </select>
+                      <span>This is a required field</span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="year">Enter expiry year:*</label>
+                    <div class="inputField">
+                      <input type="number" min="2026" max="2100" required />
+                      <span>This is a required field</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="cvv">CVV:*</label>
+                <div class="inputField">
+                  <input
+                    type="password"
+                    aria-describedby="toolTipPara"
+                    maxlength="4"
+                    required
+                    id="cvv"
+                  />
+                  <span>This is a required field</span>
+                </div>
+              </div>
+              <p id="toolTipPara">3 or 4 digits on the back of your card</p>
+            </div>
+          </fieldset>
+          <!-- order notes -->
+          <fieldset>
+            <legend>Order Notes</legend>
+            <div class="form">
+              <div class="field">
+                <label for="txt">Type your order notes here(max length 500 characters):</label>
+                <div class="inputField">
+                  <textarea name="ordernotes" id="txt" maxlength="500"></textarea>
+                  <!-- <span>This is a required field</span> -->
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="buttons">
+            <button>Cancel</button>
+            <button type="submit">submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
