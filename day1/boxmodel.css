@@ -1,0 +1,58 @@
+#div1 {
+  width: 300px;
+  margin: 1em;
+  padding: 1em;
+  border: solid;
+  background-color: aqua;
+}
+#div2 {
+  box-sizing: border-box;
+  width: 300px;
+  margin: 1em;
+  padding: 1em;
+  border: solid;
+  background-color: aquamarine;
+}
+#div3 {
+  margin: 16px;
+  width: 300px;
+  padding: 2em;
+  border: solid;
+  background-color: rgb(69, 69, 165);
+}
+/* the margin between div3 and div4 is 32px instead of 48px because margin value collapses to the larger value */
+#div4 {
+  width: 300px;
+  margin: 32px;
+  padding: 1em;
+  border: solid blue;
+  background-color: brown;
+}
+#div5 {
+  width: 300px;
+  margin: 1em 1em 0em 1em;
+  padding: 1em;
+  border: solid red;
+  background-color: cadetblue;
+}
+#div6 {
+  width: 150px;
+  margin: -2em 1em 1em 5em;
+  padding: 1em;
+  border: solid;
+  background-color: crimson;
+}
+#div7 {
+  width: 300px;
+  margin: 1em;
+  padding: 2em;
+  border: solid;
+  background-color: green;
+}
+#div8 {
+  width: 300px;
+  margin: 1em;
+  padding: 1em;
+  border: solid;
+  background-color: yellow;
+}
